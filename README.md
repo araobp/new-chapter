@@ -28,9 +28,6 @@
 ### 特許から見る自身の専門軸
 自分の専門分野は、IPC/FI分類における **`G06F3`（ユーザーインタフェース）** および **`G06F17/G06T`（データ処理・画像処理）** 周辺に集約される。かつての電話関連特許（有効期間満了）も、根本は通信を通じたUIの追求であった。
 
-* **近年の成果（特許）**：[JP2023094344A：AUGMENTED REALITY DISPLAY DEVICE, METHOD, AND PROGRAM](https://worldwide.espacenet.com/patent/search/family/087001360/publication/JP2023094344A?q=pn%3DJP2023094344A)  
-  *AR、3DCG、センサーを組み合わせたUIに関する出願（G06F3/0484, G06T19/00）。*
-
 ## 3. 今後のアクションプラン（GitHubリポジトリの再整理）
 
 次のステップへ向け、自身の技術軸に沿ってGitHubリポジトリの整理とアップデートを実行する。
