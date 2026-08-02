@@ -26,9 +26,9 @@ Jupyter Notebook MCPを導入することで、AIが生成したコードや対�
 ### コンポーネントと役割分担
 
 ```text
- 外部データソース (Web / API / CSV)
-                 │
-                 ▼
+                             外部データソース (Web / API / CSV)
+                                               │
+                                               ▼
 ┌─────────────────┐       MCP       ┌──────────────────────┐
 │  Claude Cowork  │ ───────────────>│ Jupyter Notebook MCP │
 │ (Data Scientist)│                 │ (Scraping / LLM API /│
