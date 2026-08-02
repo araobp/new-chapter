@@ -59,7 +59,7 @@ Jupyter Notebook上での具体的なデータ処理パイプラインは以下�
    * **Webスクレイピング**: BeautifulSoup / Playwright 等を用いて外部Webデータを取得。
    * **CSV取り込み**: パンダス（pandas）等を用いて既存のCSVファイルを読み込み、初期クレンジングを実行。
 2. **LLM APIによる高度なテキスト加工（AI Enrichment）**
-   * スクレイピング文面やCSV内の自由記述テキストに対し、LLM API（Gemini API / OpenAI / Anthropic API等）をNotebookから非同期呼び出し。
+   * スクレイピング文面やCSV内の自由記述テキストに対し、LLM API（Gemini API / OpenAI API / Anthropic API等）をNotebookから非同期呼び出し。
    * カテゴリ分類、感情分析、重要キーワード抽出などの非構造化データの構造化処理を実行。
 3. **SQLite DBへの統合・格納（Storage Integration）**
    * 収集・加工した全データをリレーショナル構造として整列させ、SQLite DB（`.db`）へワンストップで書き込み。
