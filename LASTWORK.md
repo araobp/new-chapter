@@ -37,7 +37,7 @@ Jupyter Notebook MCPを導入することで、AIが生成したコードや対�
                                                │
                                                ▼
 ┌─────────────────┐       Shared     ┌──────────────────────┐
-│  Box / SKILL.md │ <─────────────── │ SQLite DB / Scripts  │
+│  SKILL.md       │ <─────────────── │ SQLite DB / Scripts  │
 │ (Context/Share) │                  │ (Final Output)       │
 └─────────────────┘                  └──────────────────────┘
 ```
@@ -48,7 +48,6 @@ Jupyter Notebook MCPを導入することで、AIが生成したコードや対�
 | **Jupyter Notebook MCP** | **データ収集・処理・分析実行基盤**<br>Claudeが生成したコードを受け取り、Pythonカーネル上で高速・確実に対話実行。<br>・**CSVインポート**: 既存のローカル/外部CSVデータの取り込みと整形<br>・**Webスクレイピング**: 外部サイトからの最新トレンドデータ等の自動収集<br>・**より低コストなLLM APIの活用**: 非構造化テキストの要約・分類・感情分析処理<br>・**処理ステップの最終確認**: 各セルのコードを読み、グラフでの処理結果図示も参考に処理の正当性を確認 |
 | **SQLite DB** | **構造化データの最終成果物**<br>スクレイピング結果、LLM処理結果、CSVデータを集約・構造化し、単一のSQLite DBとして出力。 |
 | **配布用スクリプト** | **汎用・自動化ツール（`.py`）**<br>Jupyter Notebook上で構築・検証した処理フローから、第三者が軽量 `SKILL.md` 経由で直接実行・呼び出し可能なPythonスクリプトを出力・提供。 |
-| **Box** | **データ共有ストレージ**<br>作成されたSQLite DB、配布用スクリプト、および後続利用のためのドキュメントをチーム間で迅速に同期。 |
 | **軽量な `SKILL.md`** | **コンテキストの軽量化**<br>`SKILL.md` には最小限の手順とルールのみを記述。指示文の過度な肥大化を防ぎ、Claude Coworkの応答速度と精度を最大化。 |
 
 ## 分析ワークフロー（Pipeline）
@@ -85,8 +84,6 @@ Jupyter Notebook上での具体的なデータ処理パイプラインは以下�
 
 * **[Jupyter MCP Server](https://jupyter-mcp-server.datalayer.tech/)**  
   Jupyter Notebook環境とClaudeを接続し、セル単位でのコード実行や状態取得を可能にします。
-* **Box MCP Server**  
-  クラウドストレージへの成果物（DB、Notebook、スクリプト）の保存および同期を自動化します。
 * **Python実行ライブラリ / API Key**  
   スクレイピング用ライブラリ（`requests`, `beautifulsoup4` など）、データ操作用（`pandas`, `sqlite3`）、およびLLM API（`openai`, `anthropic` など）のアクセスキー。
 
